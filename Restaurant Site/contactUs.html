@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <title>Home</title>
+</head>
+<body>
+  <div id="header" style="border: 1px solid black;"> High 5 Sports Bar</div>
+<br/>
+
+  <div id="navigationBar" style="border: 1px solid black;">
+    <hr/>
+      <a href="index.html" target="_self">Home</a>
+      <a href="menu.html" target="_self">Menu</a>
+      <a href="contactUs.html" target="_self">Contact Us</a>
+    <hr/>
+  </div>
+<br/>
+
+  <div id="formBody" style="border: 1px solid red;">
+    <form action="fakepage.html" method="POST">
+      Name: <input type="text" name="name"/><br/>
+      Email: <input type="text" name="email"/><br/>
+      Phone: <input type="text" name="phone"/><br/>
+
+      Reason for Inquiry: <select id="Reason" names="reason">
+        <option value="catering" selected>Catering</option>
+        <option value="privateParty">Private Party</option>
+        <option value="feedback">Feedback</option>
+        <option value="other">Other</option>
+      </select><br/>
+
+      Additional Information: <textarea names="additionalInfo"></textarea><br/>
+
+      Have you been to the Restaurant?
+        <input type="radio" name="answer" value="no" checked/>No
+        <input type="radio" name="answer" value="yes"/>Yes<br/>
+
+      Best Days to Contact You?
+        <input type="checkbox" names="weekDays" value="Monday">M
+        <input type="checkbox" names="weekDays" value="Tuesday">T
+        <input type="checkbox" names="weekDays" value="Wednesday">W
+        <input type="checkbox" names="weekDays" value="Thursday">Th
+        <input type="checkbox" names="weekDays" value="Friday">F<br/>
+
+        <input type="submit" value="Send Request">
+      </form>
+    </div>
+<br/>
+
+  <div id="footer" style="border:1px solid green">
+    <hr/>
+    <footer>1234 Sogud Street, Baconville, MN 55555 <br/>
+    (888)-888-8888</footer>
+  </div>
+
+</body>
+</html>
