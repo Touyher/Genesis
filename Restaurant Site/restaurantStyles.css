@@ -1,18 +1,25 @@
 
-
+#navigationBar {
+  background-color: #3A3232;
+}
 #header {
   text-align: center;
   font-family: Impact;
   font-size: 40px;
   text-decoration: underline;
-  color: #D83018; /* hot coals by lizcrimson*/
+  color: #D83018;
 }
+hr {
+  border-color: #3A3232;
 
+}
 footer {
   text-align: center;
   font-family: Impact;
   font-size: 14px;
   color: #D83018;
+
+/*formating the pseudo-class navigation links */
 }
 a:link {
   font-size: 16px;
@@ -21,7 +28,7 @@ a:link {
   text-decoration: none;
 }
 a:visited {
-  color: #F07848; /*grapefruit by candilei*/
+  color: #F07848;
   font-family: verdana;
 }
 a:hover {
@@ -31,11 +38,6 @@ a:hover {
 a:active {
   text-decoration: none;
 }
-
 a {
-  padding: 5px 10px 5px 10px
-}
-
-#main {
-  text-align: center;
+  padding: 5px 20px 5px 20px
 }
