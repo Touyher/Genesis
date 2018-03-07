@@ -1,13 +1,21 @@
 <!doctype html>
 <html>
 <head>
-  <title>Home</title>
+  <title>Contact Us</title>
+    <link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
+
+<style>
+label {
+  font-weight: bold;
+}
+</style>
+
 </head>
 <body>
-  <div id="header" style="border: 1px solid black;"> High 5 Sports Bar</div>
+  <div id="header"> High 5 Sports Bar</div>
 <br/>
 
-  <div id="navigationBar" style="border: 1px solid black;">
+  <div id="navigationBar">
     <hr/>
       <a href="index.html" target="_self">Home</a>
       <a href="menu.html" target="_self">Menu</a>
@@ -16,26 +24,26 @@
   </div>
 <br/>
 
-  <div id="formBody" style="border: 1px solid red;">
+  <div id="formBody">
     <form action="fakepage.html" method="POST">
-      Name: <input type="text" name="name"/><br/>
-      Email: <input type="text" name="email"/><br/>
-      Phone: <input type="text" name="phone"/><br/>
+      <label for="name">Name:</label><input type="text" name="name"/><br/>
+      <label for="email">Email:</label><input type="text" name="email"/><br/>
+      <label for="phone">Phone:</label><input type="text" name="phone"/><br/>
 
-      Reason for Inquiry: <select id="Reason" names="reason">
+      <label for="reason">Reason for Inquiry:</label><select id="Reason" names="reason">
         <option value="catering" selected>Catering</option>
         <option value="privateParty">Private Party</option>
         <option value="feedback">Feedback</option>
         <option value="other">Other</option>
       </select><br/>
 
-      Additional Information: <textarea names="additionalInfo"></textarea><br/>
+      <label for="info">Additional Information:</label><textarea names="info"></textarea><br/>
 
-      Have you been to the Restaurant?
+      <label for="answer">Have you been to the Restaurant?</label>
         <input type="radio" name="answer" value="no" checked/>No
         <input type="radio" name="answer" value="yes"/>Yes<br/>
 
-      Best Days to Contact You?
+      <label for="weekDays">Best Days to Contact You?</label>
         <input type="checkbox" names="weekDays" value="Monday">M
         <input type="checkbox" names="weekDays" value="Tuesday">T
         <input type="checkbox" names="weekDays" value="Wednesday">W
@@ -47,7 +55,7 @@
     </div>
 <br/>
 
-  <div id="footer" style="border:1px solid green">
+  <div id="footer">
     <hr/>
     <footer>1234 Sogud Street, Baconville, MN 55555 <br/>
     (888)-888-8888</footer>

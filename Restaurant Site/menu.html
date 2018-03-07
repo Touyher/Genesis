@@ -1,13 +1,38 @@
 <!doctype html>
 <html>
 <head>
-  <title>Home</title>
+  <title>Menu</title>
+  <link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
+
+<style>
+  body {
+    background-color: #C0D8D8;
+  }
+  table, th, td {
+    padding: 5px 100px 5px 10px;
+    margin: 5px 10px;
+    border-collapse: collapse;
+  }
+  table {
+    border: 1px solid black;
+  }
+  th {
+    text-align: left;
+    text-decoration: underline;
+    background-color: #gray;
+  }
+  tbody tr:nth-child(odd) {
+    background-color: #FDFCCE;
+  }
+  tbody tr:nth-child(even) {
+    background-color: white;
+  }
+</style>
 </head>
 <body>
-  <div id="header" style="border: 1px solid black;"> High 5 Sports Bar</div>
-<br/>
+  <div id="header"> High 5 Sports Bar</div>
 
-  <div id="navigationBar" style="border: 1px solid black;">
+  <div id="navigationBar">
     <hr/>
       <a href="index.html" target="_self">Home</a>
       <a href="menu.html" target="_self">Menu</a>
@@ -16,59 +41,87 @@
   </div>
 <br/>
 
-  <div id="menu" style="border: 3px solid black;">
-    <div id="menuLeft" style="border:1px solid blue;">
-      <h2>Burgers and Fries</h2>
-          An American Classic!<br/>
-          Your choice - with or without cheese <br/>
-          Pickle, onion, tomatoes, and lettuce <br/>
-          Served with our famous thick cut <br/>
-          french fries <br/>
-          $7.95<br/>
-      <h2>Tenderloin Sandwich and Chip</h2>
-          Really Hits the Spot!<br/>
-          Plain or Sesame Seed Bun <br/>
-          Pickle, onion, tomatoes, and lettuce <br/>
-          Served with our house-made chips <br/>
-          $8.95
+  <div id="menu">
+      <table id="foodMenu">
+        <tbody>
+          <tr>
+            <td><h2>Burgers and Fries</h2>
+                An American Classic!<br/>
+                Your choice - with or without cheese <br/>
+                Pickle, onion, tomatoes, and lettuce <br/>
+                Served with our famous thick cut <br/>
+                french fries <br/>
+                $7.95</td>
+            <td><h2>Hotdog and Chips</h2>
+                An Summer Classic!<br/>
+                Your choice - white or wheat bun <br/>
+                Relish, mustard, and ketchup <br/>
+                Served with our house-made chips <br/>
+                $7.95</td>
+            <td><h2>Italian Sausage and Peppers</h2>
+                An All-Time Favorite!<br/>
+                Your choice - mild or spice <br/>
+                Coleslaw <br/>
+                Served with garlic mashers <br/>
+                $10.95</td>
+          </tr>
+          <tr>
+            <td><h2>Tenderloin Sandwich and Chip</h2>
+                Really Hits the Spot!<br/>
+                Plain or Sesame Seed Bun <br/>
+                Pickle, onion, tomatoes, and lettuce <br/>
+                Served with our house-made chips <br/>
+                $8.95</td>
+            <td><h2>House Salad</h2>
+                On the lighter side<br/>
+                You Choice - with or without cheese <br/>
+                Iceberg Lettuce, tomatoes, peppers <br/>
+                Thousand Island or Ranch Dressing <br/>
+                Served with a dinner roll<br/>
+                $6.95</td>
+            <td><h2>Brisket Sandwich and Fries</h2>
+                A Taste of Texas!<br/>
+                Smoked Brisket on thick-cut Texas <br/>
+                Toast<br/>
+                Coleslaw <br/>
+                Served with our famous thick cut <br/>
+                french fries <br/>
+                $7.95</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-<br/>
 
-    <div id="menuMiddle" style="border:1px solid red;">
-      <h2>Hotdog and Chips</h2>
-          An Summer Classic!<br/>
-          Your choice - white or wheat bun <br/>
-          Relish, mustard, and ketchup <br/>
-          Served with our house-made chips <br/>
-          $7.95<br/>
-      <h2>House Salad</h2>
-          On the lighter side<br/>
-          You Choice - with or without cheese <br/>
-          Iceberg Lettuce, tomatoes, peppers <br/>
-          Thousand Island or Ranch Dressing <br/>
-          Served with a dinner roll<br/>
-          $6.95<br/>
+  <!--beverage table-->
+    <div id="beverages">
+      <table id="drinkBeverages">
+        <thead>
+          <tr>
+            <th colspan="2">Beverages</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Root Beer</td>
+            <td>$3.00</td>
+          </tr>
+          <tr>
+            <td>Bottled Water</td>
+            <td>$1.25</td>
+          </tr>
+          <tr>
+            <td>Lemonade</td>
+            <td>$1.00</td>
+          </tr>
+          <tr>
+            <td>Iced Tea</td>
+            <td>$1.25</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-<br/>
 
-    <div id="menuRight" style="border: 1px solid green;">
-      <h2>Italian Sausage and Peppers</h2>
-          An All-Time Favorite!<br/>
-          Your choice - mild or spice <br/>
-          Coleslaw <br/>
-          Served with garlic mashers <br/>
-          $10.95<br/>
-      <h2>Brisket Sandwich and Fries</h2>
-          A Taste of Texas!<br/>
-          Smoked Brisket on thick-cut Texas <br/>
-          Toast<br/>
-          Coleslaw <br/>
-          Served with our famous thick cut <br/>
-          french fries <br/>
-          $7.95<br/>
-    </div>
   </div>
-<br/>
 
   <div id="footer" style="border:1px solid green">
     <hr/>

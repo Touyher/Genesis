@@ -1,0 +1,41 @@
+
+
+#header {
+  text-align: center;
+  font-family: Impact;
+  font-size: 40px;
+  text-decoration: underline;
+  color: #D83018; /* hot coals by lizcrimson*/
+}
+
+footer {
+  text-align: center;
+  font-family: Impact;
+  font-size: 14px;
+  color: #D83018;
+}
+a:link {
+  font-size: 16px;
+  color: #D83018;
+  font-family: verdana;
+  text-decoration: none;
+}
+a:visited {
+  color: #F07848; /*grapefruit by candilei*/
+  font-family: verdana;
+}
+a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+a:active {
+  text-decoration: none;
+}
+
+a {
+  padding: 5px 10px 5px 10px
+}
+
+#main {
+  text-align: center;
+}
