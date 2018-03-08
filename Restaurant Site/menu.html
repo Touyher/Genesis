@@ -5,64 +5,64 @@
   <link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
 
 <style>
-  body {
-    background-color: #C0D8D8;
-    color: #3A3232;
-  }
-  #menu {
-    width: 100%;
-  }
-  h2 {
-    text-decoration: underline;
-  }
-  table {
-   border: 3px solid #3A3232;
-   font-family: verdana;
-   font-size: 14px;
-   margin: 10px 0px 10px 0px;
- }
-  table, th, td {
-    text-align: center;
-    border-collapse: collapse;
-  }
+body {
+  background-color: #C0D8D8;
+  color: #3A3232;
+}
+#menu {
+  width: 100%;
+  border: 3px solid white;
+}
+h2 {
+  text-decoration: underline;
+}
+table {
+  font-family: verdana;
+  font-size: 14px;
+  border: 3px solid #3A3232;
+  margin: 10px 0px 10px 0px;
+}
+table, th, td {
+  text-align: center;
+  border-collapse: collapse;
+}
 
+#foodMenu {
+  width: 98%;
+  margin: 10px auto 10px auto;
+}
+#foodMenu th, #foodMenu td {
+  width: 33.33%;
+  height: 200px;
+}
+#foodMenu tbody tr:nth-child(odd) {
+  background-color: #FDFCCE;
+}
+#foodMenu tbody tr:nth-child(even) {
+  background-color: white;
+}
 
-  #foodMenu {
-    width: 100%;
-  }
-  #foodMenu th, #foodMenu td {
-    height: 200px;
-    width: 33.33%;
-  }
-  #foodMenu tbody tr:nth-child(odd) {
-    background-color: #FDFCCE;
-  }
-  #foodMenu tbody tr:nth-child(even) {
-    background-color: white;
-  }
-
-
-  #drinkBeverages {
-      margin: auto;
-      width: 50%;
-  }
-  #drinkBeverages th, #drinkBeverages td {
-    width: 50%;
-    height: 50px;
-  }
-  #drinkBeverages th {
-    text-decoration: underline;
-    background-color: #FDFCCE;
-  }
-  #drinkBeverages tbody tr:nth-child(odd) {
-    background-color: white;
-  }
-  #drinkBeverages tbody tr:nth-child(even) {
-    background-color: #FDFCCE;
-  }
-
+#drinkBeverages {
+  width: 50%;
+  margin: 10px auto 10px auto;
+}
+#drinkBeverages th, #drinkBeverages td {
+  width: 50%;
+  height: 50px;
+}
+#drinkBeverages th {
+  text-decoration: underline;
+  background-color: #FDFCCE;
+}
+#drinkBeverages tbody tr:nth-child(odd) {
+  background-color: white;
+}
+#drinkBeverages tbody tr:nth-child(even) {
+  background-color: #FDFCCE;
+}
 </style>
 </head>
+
 <body>
   <div id="header"> High 5 Sports Bar</div>
 
@@ -73,6 +73,7 @@
       <a href="contactUs.html" target="_self">Contact Us</a>
     <hr/>
   </div>
+
   <div id="menu">
       <table id="foodMenu">
         <tbody>
@@ -123,7 +124,7 @@
         </tbody>
       </table>
   <!--beverage table-->
-    <div id="beverages">
+  <div id="beverages">
       <table id="drinkBeverages">
         <thead>
           <tr>
@@ -151,6 +152,7 @@
       </table>
     </div>
   </div>
+
   <div id="footer">
     <hr/>
     <footer>1234 Sogud Street, Baconville, MN 55555 <br/>

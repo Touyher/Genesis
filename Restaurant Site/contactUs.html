@@ -5,25 +5,51 @@
     <link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
 
 <style>
+#form {
+  background-color: #C0D8D8;
+  font-size: 14px;
+  font-family: verdana;
+  text-align: center;
+  width: 100%;
+  border: 3px solid #3A3232;
+}
+#formContent {
+  text-align: right;  /*make all text align to the right*/
+  width: 50%;
+  margin: 0px 85% 0px 15%;
+}
+#right {
+  text-align: left;   /*make text on right side table align to the left*/
+}
 label {
-  font-weight: bold;  /*work on the form page */
+  font-weight: bold;
   color: #3A3232;
-  padding: 2px 30px 2px 10px;
-  border: none;
+  padding: 2px 5px 2px 10px;
   margin: 10px;
 }
-#formBody {
-    background-color: #C0D8D8;
-    text-align: center;
-    font-size: 14px;
-    font-family: verdana;
+ input[type=text]{
+   width: 97%;
+   height:20px;
+ }
+ select {
+   width: 100%;
+   height: 20px;
+ }
+ textarea {
+   width: 97%;
+   height:100px;
+ }
+input[type=submit]{
+  background-color: #D83018;
+  color: white;
+  padding: 5px 10px;
+  border: 2px solid #3A3232;
 }
 </style>
-
 </head>
+
 <body>
   <div id="header"> High 5 Sports Bar</div>
-<br/>
 
   <div id="navigationBar">
     <hr/>
@@ -33,38 +59,54 @@ label {
     <hr/>
   </div>
 
-  <div id="formBody" style="border: 1px solid blue;">
-    <br/>
-    <form action="fakepage.html" method="POST">
-      <label for="name">Name:</label><input type="text" name="name"/><br/>
-      <label for="email">Email:</label><input type="text" name="email"/><br/>
-      <label for="phone">Phone:</label><input type="text" name="phone"/><br/>
-
-      <label for="reason">Reason for Inquiry:</label><select id="Reason" names="reason">
-        <option value="catering" selected>Catering</option>
-        <option value="privateParty">Private Party</option>
-        <option value="feedback">Feedback</option>
-        <option value="other">Other</option>
-      </select><br/>
-
-      <label for="info">Additional Information:</label><textarea names="info"></textarea><br/>
-
-      <label for="answer">Have you been to the Restaurant?</label>
-        <input type="radio" name="answer" value="no" checked/>No
-        <input type="radio" name="answer" value="yes"/>Yes<br/>
-
-      <label for="weekDays">Best Days to Contact You?</label>
-        <input type="checkbox" names="weekDays" value="Monday">M
-        <input type="checkbox" names="weekDays" value="Tuesday">T
-        <input type="checkbox" names="weekDays" value="Wednesday">W
-        <input type="checkbox" names="weekDays" value="Thursday">Th
-        <input type="checkbox" names="weekDays" value="Friday">F<br/>
-
-        <input type="submit" value="Send Request">
-
-      </form>
-      <br/>
-    </div>
+  <div id="form"><br/>
+    <form action="fakePage.html" method="POST">
+      <table id="formContent">
+          <tbody>
+            <tr>
+              <td id="left"><label for="name">Name:</label></td>
+              <td id="right"><input type="text" name="name"/></td>
+            </tr>
+            <tr>
+              <td id="left"><label for="email">Email:</label></td>
+              <td id="right"><input type="text" name="email"/></td>
+            </tr>
+            <tr>
+              <td id="left"><label for="phone">Phone:</label></td>
+              <td id="right"><input type="text" name="phone"/></td>
+            </tr>
+            <tr>
+              <td id="left"><label for="reason">Reason for Inquiry:</label></td>
+              <td id="right"><select id="Reason" names="reason">
+                    <option value="catering" selected>Catering</option>
+                    <option value="privateParty">Private Party</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option></select></td>
+            </tr>
+            <tr>
+              <td id="left"><label for="info">Additional Information:</label></td>
+              <td id="right"><textarea names="info"></textarea></td>
+            </tr>
+            <tr>
+              <td id="left"><label for="answer">Have you been to the Restaurant?</label></td>
+              <td id="right"><input type="radio" name="answer" value="no" checked/>No
+                  <input type="radio" name="answer" value="yes"/>Yes</td>
+            </tr>
+            <tr>
+              <td id="left"><label for="weekDays">Best Days to Contact You?</label></td>
+              <td id="right"><input type="checkbox" names="weekDays" value="Monday"> M
+                  <input type="checkbox" names="weekDays" value="Tuesday"> T
+                  <input type="checkbox" names="weekDays" value="Wednesday"> W
+                  <input type="checkbox" names="weekDays" value="Thursday"> Th
+                  <input type="checkbox" names="weekDays" value="Friday"> F</td>
+            </tr>
+            <tr>
+              <td colspan="2"><input type="submit" value="Send Request"></td>
+            </tr>
+          </tbody>
+      </table>
+    </form><br/>
+  </div>
 
   <div id="footer">
     <hr/>

@@ -1,35 +1,46 @@
+/*Credit for Colors
+  color scheme from http://www.colourlovers.com/palette/209701/Burning_Angel
+  name of palette: Burning Angel by w00p
+  -entre les nuages(#3A3232) by goldkiss
+  -hot coals(#D83018) by lizcrimson
+  -grapefruit(#F07848) by candilei
+  -At Peace With You(#FDFCCE) by Jaylauno
+  -weak tea.(#C0D8D8) by artsykerley */
 
 #navigationBar {
   background-color: #3A3232;
+  width: 100%;
 }
+/* formatting Header */
 #header {
   text-align: center;
+  text-decoration: underline;
   font-family: Impact;
   font-size: 40px;
-  text-decoration: underline;
   color: #D83018;
 }
-hr {
-  border-color: #3A3232;
 
-}
+/* formatting Footer*/
 footer {
   text-align: center;
   font-family: Impact;
   font-size: 14px;
   color: #D83018;
+}
+hr {
+  border: 3px solid #3A3232;
+}
 
 /*formating the pseudo-class navigation links */
-}
 a:link {
+  text-decoration: none;
+  font-family: verdana;
   font-size: 16px;
   color: #D83018;
-  font-family: verdana;
-  text-decoration: none;
 }
 a:visited {
-  color: #F07848;
   font-family: verdana;
+  color: #F07848;
 }
 a:hover {
   text-decoration: underline;
