@@ -9,25 +9,30 @@
     background-color: #C0D8D8;
     color: #3A3232;
   }
-
-/* formating the tables*/
   #menu {
-    border: 1px solid black;
+    width: 100%;
+  }
+  h2 {
+    text-decoration: underline;
   }
   table {
-   border: 2px solid gray;
+   border: 3px solid #3A3232;
    font-family: verdana;
    font-size: 14px;
+   margin: 10px 0px 10px 0px;
  }
   table, th, td {
     text-align: center;
-    padding: 5px 20px 5px 20px;
-    margin: 5px 10px;
     border-collapse: collapse;
+  }
+
+
+  #foodMenu {
+    width: 100%;
   }
   #foodMenu th, #foodMenu td {
     height: 200px;
-    width: 600px;
+    width: 33.33%;
   }
   #foodMenu tbody tr:nth-child(odd) {
     background-color: #FDFCCE;
@@ -35,20 +40,19 @@
   #foodMenu tbody tr:nth-child(even) {
     background-color: white;
   }
+
+
   #drinkBeverages {
-    margin-left: 300px;
-    margin-right: 300px;
-  }
-  #drinkBeverages th {
-    text-align: center;
-    text-decoration: underline;
-    Font-size: 20px;
-    background-color: #FDFCCE;
+      margin: auto;
+      width: 50%;
   }
   #drinkBeverages th, #drinkBeverages td {
+    width: 50%;
     height: 50px;
-    width: 300px;
-
+  }
+  #drinkBeverages th {
+    text-decoration: underline;
+    background-color: #FDFCCE;
   }
   #drinkBeverages tbody tr:nth-child(odd) {
     background-color: white;
@@ -56,9 +60,7 @@
   #drinkBeverages tbody tr:nth-child(even) {
     background-color: #FDFCCE;
   }
-  h2 {
-    text-decoration: underline;
-  }
+
 </style>
 </head>
 <body>
@@ -125,7 +127,7 @@
       <table id="drinkBeverages">
         <thead>
           <tr>
-            <th colspan="2">Beverages</th>
+            <th colspan="2"><h2>Beverages</h2></th>
           </tr>
         </thead>
         <tbody>
