@@ -1,0 +1,40 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+#header, #resultHeader {
+  font-size: 30px;
+  font-weight: bold;
+}
+table {
+  width: 500px;
+  height: 250px;
+  margin: auto;
+  text-align: center;
+  border-collapse: collapse;
+  border: 3px solid black;
+}
+td {
+  border-right: 3px solid black;
+}
+td:nth-child(even) {
+  width: 100px;
+}
+td:nth-child(odd){
+  width: 400px;
+}
+tr:nth-child(odd) {
+  background-color: lightgray;
+}
+#tableStart {
+  background-color: gray;
+}
+#result {
+  display: none;
+}
+
+hr {
+  border: 2px solid black;
+  width: 300px;
+}
