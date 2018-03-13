@@ -5,15 +5,15 @@
 }
 label {
   color: #3A3232;
+  font-size: 20px;
 }
 #head, #footer {
   background-color: #3A3232;
   color: #D83018;
-  text-align: center;
 }
 #footer {
   font-size: 15px;
-  font-family: sans-serif;
+  font-family: verdana;
 }
 td {
   border-bottom: 1px solid black;
@@ -25,9 +25,7 @@ td {
 h2, h1 {
   color: #D83018;
 }
-label {
-  font-size: 20px;
-}
+
 a {
   font-weight: bold;
   color: white;

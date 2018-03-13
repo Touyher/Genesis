@@ -2,7 +2,6 @@ function playGame () {
   //get bet
   var startBet = document.getElementById("startingAmount").value;
 
-
   //display error if bet less than 0
     if(startBet <= 0) {
     alert("Please bet more than zero dollars!");
@@ -21,7 +20,7 @@ function playGame () {
   while(gameMoney > 0){
     //roll dice, max = 12, min = 2
     var roleDice = Math.ceil(Math.random() * (1 + 12 - 2));
-    rollCounter++
+    rollCounter++;
     //add to gameMoney if dice roll is 7
     if (roleDice == 7){
       gameMoney = gameMoney + earn;
