@@ -18,8 +18,8 @@ function playGame () {
   var maxRoll = 0;
     //loop to play game only if there is gameMoney
   while(gameMoney > 0){
-    //roll dice, max = 12, min = 2
-    var roleDice = Math.ceil(Math.random() * (1 + 12 - 2));
+    //take sum of two dice rolls
+    var roleDice = (Math.ceil(Math.random() * (1 + 6 - 1))) + (Math.ceil(Math.random() * (1 + 6 - 1)));
     rollCounter++;
     //add to gameMoney if dice roll is 7
     if (roleDice == 7){

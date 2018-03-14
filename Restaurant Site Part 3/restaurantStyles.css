@@ -1,11 +1,25 @@
+/*Color Credit
+  color scheme from http://www.colourlovers.com/palette/209701/Burning_Angel
+  name of palette: Burning Angel by w00p
+  -entre les nuages(#3A3232) by goldkiss
+  -hot coals(#D83018) by lizcrimson
+  -grapefruit(#F07848) by candilei
+  -At Peace With You(#FDFCCE) by Jaylauno
+  -weak tea.(#C0D8D8) by artsykerley */
 
+/* Nav Bar */
+a {
+  font-weight: bold;
+  color: white;
+}
+.nav {
+  background-color: #3A3232;
+}
+
+/* Body */
 #bodyContent {
   padding: 20px;
   background-color: #C0D8D8;
-}
-label {
-  color: #3A3232;
-  font-size: 20px;
 }
 #head, #footer {
   background-color: #3A3232;
@@ -14,28 +28,32 @@ label {
 #footer {
   font-size: 15px;
   font-family: verdana;
-}
-td {
-  border-bottom: 1px solid black;
-}
-#tableHeader {
-  border-bottom: 2px solid black;
-  /*border-top: 2px solid black;*/
+  font-weight: bold;
 }
 h2, h1 {
   color: #D83018;
 }
 
-a {
-  font-weight: bold;
-  color: white;
+/* Menu Page */
+#beveragesTable {
+  width: 50%;
+  margin: 0px auto;
 }
-.nav {
-  background-color: #3A3232;
-  }
+#tableHeader {
+  border-bottom: 2px solid #3A3232;
+  border-top: 2px solid #3A3232;
+}
+td {
+  border-bottom: 1px solid #3A3232;
+}
+
+/* Contact Us */
+label {
+  color: #3A3232;
+  font-size: 20px;
+}
 select, textarea  {
   width: 200px;
-
 }
 textarea {
   height: 100px;
